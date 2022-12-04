@@ -12,15 +12,40 @@ body {
 }
 
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid firebrick;
+}
+
+.container-two{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    outline: 2px solid firebrick;
+}
+
+.container-footer {
+    margin-left: auto;
+        margin-right: auto;
+        width: 1600px;
+
+        outline: 2px solid firebrick;
+    }
 
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
-  
+ 
 
 .header-style {
+    display: flex;
     background-color: #ffff;
+    border: 1px solid #ECECEC;
 }
 .logo-link {
     color: var(--links-buttons-text-color);
@@ -32,6 +57,7 @@ ul {
         text-decoration: none;
 }
 .logo-header {
+    margin-right: 93px;
     color: #000000;
     font-family: 'Raleway';
         font-weight: 700;
@@ -40,7 +66,26 @@ ul {
         letter-spacing: 0.03em;
 }
  
+.links {
+    display: flex;
+    align-items: center;
+}
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+.site-link-list {
+        display: flex;
+        align-items: center;
+}
+
+.site-link-list .link-list {
+
+       display: block;
+       padding-top: 32px;
+       padding-bottom: 32px;
+}
 
 .site-link.current {
     color: var(--links-buttons-text-color);       
@@ -50,6 +95,18 @@ ul {
         letter-spacing: 0.02em;
         text-decoration: none;
 }
+
+.link-list {
+    margin-right: 50px;
+}
+.link-lists {
+    display: block;
+    padding-top: 32px;
+        padding-bottom: 32px;
+
+}
+
+
 .site-link {
     color: var(--primary-text-color);
         font-weight: 500;
@@ -68,9 +125,17 @@ ul {
 }
 
 
+.not-nav {
+    display: flex;
+    margin-left: 380px;
+    padding-right: 0px;
+}
 
+.tel {
+    margin-left: 35px;
+}
 
-.mail-link {
+.mail {
     color: var(--description-text-color);
         font-weight: 500;
         font-size: 14px;
@@ -78,8 +143,8 @@ ul {
         letter-spacing: 0.02em;
         text-decoration: none;
 }
-.mail-link:hover,
-.mail-link:focus {
+.mail:hover,
+.mail:focus {
     color: var(--links-buttons-text-color);
 }
 
@@ -91,7 +156,8 @@ ul {
         letter-spacing: 0.02em;
         text-decoration: none;
 }
-.tel:hover {
+.tel:hover,
+.tel:focus {
     color: var(--links-buttons-text-color);
 }
 
@@ -99,28 +165,36 @@ ul {
 
 
 .section-studio {
+    width: 1600px;
     background-color: #2F303A;
+    text-align: center;
 }
 .hero-title {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-top: 200px;
     color: #ffff;
     font-style: normal;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
 }
 
 
 
+.button-h {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 200px;
+}
 
 .button-studio {
         color: var(--primary-text-color);
             font-weight: 700;
             font-size: 16px;
             line-height: 1.81;
-            display: flex;
             align-items: center;
             text-align: center;
             letter-spacing: 0.06em;
@@ -130,6 +204,8 @@ ul {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border: 0px;
         border-radius: 4px;
+        padding: 10px 24px;
+        min-width: 200px;
 }
 .button-studio {
     cursor: pointer;
@@ -146,11 +222,27 @@ ul {
 }
 
 
- 
 
+ .studio-list {
+   padding-top: 94px;
+   padding-bottom: 94px;
 
+ }
+ .s-list {
+    display: flex;
+ }
 
+.s-list-styles {
+    margin-right: 30px;
+}
+
+.s-list-styles:nth-child(4n) {
+    margin-right: 0px;
+}
+  
 .header-studio {
+    margin-top: 0px;
+    margin-bottom: 10px;
     color: var(--primary-text-color);
         font-weight: 700;
         font-size: 14px;
@@ -159,26 +251,50 @@ ul {
         text-transform: uppercase;
 }
 .header-s-description {
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: var(--description-text-color);
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
 }
+
+.work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .header-s-two {
+    margin-top: 0px;
+    margin-bottom: 50px;
     color: var(--primary-text-color);
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+}
+
+.h-image-list {
+ display: flex;
+}
+.design {
+    margin-right: 30px;
+}
+.design:nth-child(3) {
+    margin-right: 0px;
 }
 
 
 .section-s-two {
+    margin-top: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: #F5F4FA;
 }
 .team {
+    margin-top: 0px;
+    margin-bottom: 50px;
     color: var(--primary-text-color);
         font-weight: 700;
         font-size: 36px;
@@ -186,7 +302,24 @@ ul {
         text-align: center;
         letter-spacing: 0.03em;
 }
+
+.cards-h-list {
+    display: flex;
+}
+.card {
+    width: 270px;
+    margin-right: 30px;
+    background-color: #ffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.card:nth-child(4n) {
+    margin-right: 0px;
+}
 .names {
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: var(--primary-text-color);
         font-weight: 500;
         font-size: 16px;
@@ -195,6 +328,8 @@ ul {
         letter-spacing: 0.03em;
 }
 .name-description {
+   margin-top: 0px;
+   padding-bottom: 30px;
     color: var(--description-text-color);
         font-weight: 400;
         font-size: 16px;
@@ -204,6 +339,20 @@ ul {
 }
 
 
+.p-button-list {
+    display: flex;
+    margin-left: 310px;
+}
+
+.p-button-styles:nth-child(5) {
+    margin-right: 0px;
+}
+
+
+.portf-section {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 
 .button-port {
     background-color: #F5F4FA;
@@ -213,6 +362,8 @@ ul {
         line-height: 1.62;
         letter-spacing: 0.03em;
     border: 0px ;
+    border-radius: 4px;
+    padding: 6px 22px;
     cursor: pointer;
 }
 .button-port:hover {
@@ -224,13 +375,56 @@ ul {
 .button-port:focus {
     background-color: var(--links-buttons-text-color);
     color: #ffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
+.h-p {
+    margin-top: 0px;
+        margin-bottom: 0px;
+}
+
+.p-button-styles {
+margin-right: 8px;
+}
+
+.button-port {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
 
 
+.section-p-list {
+    padding-left: 15px;
+    padding-bottom: 94px;
+
+}
+
+.cards-list {
+   display: flex;
+   flex-wrap: wrap;
+}
+.card-portf {
+    width: 370px;
+        background-color: #FFFF;
+        border: 1px solid #EEEEEE;
+        margin-right: 30px;
+        margin-bottom: 30px;
+ }
+
+.card-portf:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.card-portf:nth-last-child(-n +3) {
+    margin-bottom: 0px;
+}
 
 .header-portf {
+    margin-top: 20px;
+    margin-bottom: 4px;
     color: var(--primary-text-color);
         font-weight: 700;
         font-size: 18px;
@@ -238,6 +432,8 @@ ul {
         letter-spacing: 0.06em;
 }
 .header-p-description {
+    margin-top: 0px;
+    margin-bottom: 20px;
     color: var(--description-text-color);
         font-weight: 400;
         font-size: 16px;
@@ -251,7 +447,22 @@ ul {
 
 
 .footer-style {
+
+    width: 1600px;
+    height: 251px;
     background-color: #2F303A;
+}
+
+.logo-link-f {
+    margin-top: 60px;
+    padding-left: 200px;
+    color: var(--links-buttons-text-color);
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
 }
 .logo-header-f {
     color: #ffff;
@@ -261,6 +472,8 @@ ul {
         letter-spacing: 0.03em;
 }
 .adress-style {
+    margin-top: 28px;
+    padding-left: 200px;
     color: #ffff;
         font-weight: 400;
         font-size: 14px;
@@ -269,6 +482,8 @@ ul {
         text-decoration: none;
 }
 .mail-link-f {
+    margin-top: 12px;
+    padding-left: 200px;
     color:  #FFFFFF99;
     font-style: normal;
         font-weight: 400;
@@ -281,6 +496,9 @@ ul {
     color: var(--links-buttons-text-color);
 }
 .tel-f {
+    margin-top: 12px;
+    margin-bottom: 60px;
+    padding-left: 200px;
     color:  #FFFFFF99;
            font-weight: 400;
             font-size: 14px;
