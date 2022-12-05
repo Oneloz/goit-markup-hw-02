@@ -15,6 +15,8 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 1200px;
     outline: 2px solid firebrick;
 }
@@ -50,6 +52,7 @@ ul {
 .logo-link {
     color: var(--links-buttons-text-color);
     font-family: 'Raleway';
+        margin-right: 93px;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -57,7 +60,6 @@ ul {
         text-decoration: none;
 }
 .logo-header {
-    margin-right: 93px;
     color: #000000;
     font-family: 'Raleway';
         font-weight: 700;
@@ -127,7 +129,7 @@ ul {
 
 .not-nav {
     display: flex;
-    margin-left: 380px;
+    margin-left: 354px;
     padding-right: 0px;
 }
 
@@ -165,14 +167,14 @@ ul {
 
 
 .section-studio {
-    width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #2F303A;
     text-align: center;
 }
 .hero-title {
     margin-top: 0px;
     margin-bottom: 40px;
-    padding-top: 200px;
     color: #ffff;
     font-style: normal;
         font-weight: 900;
@@ -184,11 +186,6 @@ ul {
 
 
 
-.button-h {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 200px;
-}
 
 .button-studio {
         color: var(--primary-text-color);
@@ -226,8 +223,16 @@ ul {
  .studio-list {
    padding-top: 94px;
    padding-bottom: 94px;
-
  }
+
+.hidden-studio-h {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    visibility: hidden;
+}
+   
+
+
  .s-list {
     display: flex;
  }
@@ -260,7 +265,7 @@ ul {
         letter-spacing: 0.03em;
 }
 
-.work {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -341,7 +346,7 @@ ul {
 
 .p-button-list {
     display: flex;
-    margin-left: 310px;
+    margin-left: 312px;
 }
 
 .p-button-styles:nth-child(5) {
@@ -448,14 +453,12 @@ margin-right: 8px;
 
 .footer-style {
 
-    width: 1600px;
     height: 251px;
     background-color: #2F303A;
 }
 
 .logo-link-f {
     margin-top: 60px;
-    padding-left: 200px;
     color: var(--links-buttons-text-color);
         font-family: 'Raleway';
         font-weight: 700;
@@ -473,7 +476,6 @@ margin-right: 8px;
 }
 .adress-style {
     margin-top: 28px;
-    padding-left: 200px;
     color: #ffff;
         font-weight: 400;
         font-size: 14px;
@@ -483,7 +485,6 @@ margin-right: 8px;
 }
 .mail-link-f {
     margin-top: 12px;
-    padding-left: 200px;
     color:  #FFFFFF99;
     font-style: normal;
         font-weight: 400;
@@ -498,7 +499,6 @@ margin-right: 8px;
 .tel-f {
     margin-top: 12px;
     margin-bottom: 60px;
-    padding-left: 200px;
     color:  #FFFFFF99;
            font-weight: 400;
             font-size: 14px;
